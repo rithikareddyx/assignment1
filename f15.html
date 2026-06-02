@@ -1,52 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Management System</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        header{
+            background: navy;
+            color:white;
+            padding:15px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:10px;
+        }
+
+        .hero{
+            text-align:center;
+            padding:50px;
+            animation:fadeIn 2s;
+        }
+
+        button{
+            padding:10px;
+            margin-top:10px;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:lightblue;
+            transform:scale(1.1);
+        }
+
+        .features{
+            text-align:center;
+            padding:20px;
+        }
+
+        .card{
+            border:1px solid black;
+            margin:10px;
+            padding:15px;
+        }
+
+        footer{
+            background:navy;
+            color:white;
+            text-align:center;
+            padding:10px;
+        }
+
+        @keyframes fadeIn{
+            from{opacity:0;}
+            to{opacity:1;}
+        }
+
+        @media(max-width:768px){
+            header{
+                flex-direction:column;
+            }
+        }
+    </style>
 </head>
 
 <body>
-   <<div class="logo">
-      <img src="logo.png" alt="College Logo" width="100" height="100"/>
-      <h2>ABC College</h2>
-    </div>
-    <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-   </header>
 
-  <section class="hero">
-    <h1>Welcome to Student Management System</h1>
-    <p>Manage students, attendance, and results</p>
-    <button>Register Now</button>
-  </section>
+    <header>
+        <div>
+            <img src="logo.png" alt="Logo" width="60">
+            <h2>CVR College</h2>
+        </div>
 
-  <section class="features">
-    <h2>Features</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-    <div class="feature-container">
-      <div class="card">
-        <h3>Student Registration</h3>
-        <p>Add and manage student details easily.</p>
-      </div>
+    <section class="hero">
+        <h1>Welcome to Student Management System</h1>
+        <p>Manage Students, Attendance and Results</p>
+        <button>Register Now</button>
+    </section>
 
-      <div class="card">
-        <h3>Attendance</h3>
-        <p>Track daily student attendance records.</p>
-      </div>
+    <section class="features">
+        <h2>Features</h2>
 
-      <div class="card">
-        <h3>Results</h3>
-        <p>View and manage exam results efficiently.</p>
-      </div>
-    </div>
-  </section>
+        <div class="card">
+            <h3>Student Registration</h3>
+  
+        </div>
 
-  <footer class="footer">
-    <p> 2026 CVR College. All Rights Reserved.</p>
-  </footer>
+        <div class="card">
+            <h3>Attendance</h3>
+        </div>
+
+        <div class="card">
+            <h3>Results</h3>
+        </div>
+    </section>
+
+    <footer>
+        <p></p> 2026 CVR College. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>

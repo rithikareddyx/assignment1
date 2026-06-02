@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navigation Bar</title>
+
+    <style>
+        nav{
+            background-color: darkblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .menu{
+            display: flex;
+        }
+
+        .menu a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .logo{
+            color: white;
+            font-weight: bold;
+        }
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .menu{
+                flex-direction: column;
+            }
+
+            .menu a{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">LOGO</div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+</body>
+</html>
