@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:60px;
+  margin-top:80px;
+}
+.loader{
+    width:50px;
+    height:50px;
+    border:5px solid #ccc;
+    border-top-color:crimson;
+    border-radius:50%;
+    animation: spin 1s linear infinite;
+   
+}
+
+@keyframes spin{
+  0%{ transform: rotate(0deg); }
+  100%{ transform: rotate(360deg); }
+}
+
+.ball{
+  width:30px;
+  height:30px;
+  background:crimson;
+  border-radius:50%;
+  top:35px;
+  animation: move 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position:relative;
+}
+
+@keyframes move{
+  0%{ left:0; }
+  100%{ left:270px; }
+}
+h1 {
+  text-align: center;
+  font-size: 60px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+.signal {
+  width: 70px;
+  background: black;
+  padding: 10px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+.light {
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: change 6s infinite;
+}
+
+.red { background: red; 
+  animation-delay: 0s; 
+}
+
+.yellow { background: yellow; 
+  animation-delay: 2s; 
+}
+
+.green { 
+  background: green;
+   animation-delay: 4s;
+}
+
+@keyframes change {
+  0%, 20% { opacity: 1; }
+  21%, 100% { opacity: 0.3; }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="loader"></div>
+<div class="ball"></div>
+
+<h1>Welcome</h1>
+
+<div class="signal">
+  <div class="light red"></div>
+  <div class="light yellow"></div>
+  <div class="light green"></div>
+</div>
+
+</body>
+</html>

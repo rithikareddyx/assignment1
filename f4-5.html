@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management Dashboard</title>
+    <style>
+        .header {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .main-content {
+            flex: 1;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+        }
+        button{
+            background-color:rgb(107, 177, 235);
+            transition: all 0.5s;    
+        }
+        button:hover{
+            background-color: green;
+            scale: 1.1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>Header</h2>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            Sidebar
+        </div>
+
+        <div class="main-content">
+            Main Content
+        </div>
+    </div>
+    <button>Animated button</button>
+</body>
+</html>

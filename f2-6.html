@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Student Profile Card</title>
+    <style>
+        .card {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+            flex-direction: row;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            width: 250px;
+            height: 250px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="image.png" alt="Profile Image">
+        <div class="details">
+            <h4>Rithika Reddy</h4>
+            <p>Branch: CSE</p>
+            <p>Email: rithika@example.com</p>
+        </div>
+    </div>
+
+</body>
+</html>
